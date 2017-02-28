@@ -1,0 +1,23 @@
+header {
+	font-size: 65px;
+	line-height: 75px;
+	text-align: center;
+	color: #eca853;
+	font-style: impact, fantasy;
+	height: 175px;
+	background-color:  #800a0a;
+	padding: 40px 0px 20px 0px; 
+}
+
+#battle-ground{
+	text-align: center;
+	height: 100px;
+	padding: 20px 0px 20px 0px; 
+}
+
+#new-buttons{
+	text-align: center;
+	height: 100px;
+	padding: 20px 0px 20px 0px; 
+
+}
