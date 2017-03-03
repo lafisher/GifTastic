@@ -1,5 +1,11 @@
 $(document).ready(function() {
 
+//var topics = ["Wonder Woman Justice League","Flash Barry Allen","Superman","Batman","Iron Man Avengers","Captain America Avengers","The Black Widow","Thor Avengers","Loki Tom Hiddleson"];
+//var battle;
+//function assemble(){
+  //for (var i = 0; i < topics.length; i++) {
+    //topic[i]}
+
 $("button").on("click", function() {
       var character = $(this).attr("data-character");
       var queryURL = "http://api.giphy.com/v1/gifs/search?q=" +
@@ -25,7 +31,7 @@ $("button").on("click", function() {
             gifDiv.prepend(p);
             gifDiv.prepend(characterImage);
 
-            $("#dc").prepend(gifDiv);
+            $("#dc-marvel").prepend(gifDiv);
           }
         });
     });
