@@ -8,6 +8,7 @@ $(document).ready(function() {
 
 $("button").on("click", function() {
       var character = $(this).attr("data-character");
+      //var state = $(this).attr("data-state");
       var queryURL = "http://api.giphy.com/v1/gifs/search?q=" +
         character + "&api_key=dc6zaTOxFJmzC&limit=10";
 
