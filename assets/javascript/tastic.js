@@ -18,9 +18,10 @@ instead of writing it out in the HTML the way i did.
         }
       }
 assemble();*/ 
-var topics = [];     
+var topics = []; 
+var giphyInfo = [];    
 
-$("button").on("click", function() {
+ function gifMagic() {
       var character = $(this).attr("data-character");
       var state = $(this).attr("data-state");
       var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
@@ -41,7 +42,7 @@ $("button").on("click", function() {
             var rateDiv = $("<p class= 'divRates'>").text("Rating: " + rating);
 
             var characterImage = $("<img>");
-            characterImage.attr("src", results[i].images.fixed_height_still.url);
+            characterImage.attr("src", results[i].images.fixed_height.url);
 
             gifDiv.prepend(characterImage);
             gifDiv.prepend(rateDiv);
@@ -50,6 +51,11 @@ $("button").on("click", function() {
             $("#dc-marvel").prepend(gifDiv);
           }
         });
+        };
+
+$("button").on("click", gifMagic); 
+$(document).on("click", ".character", gifMagic); 
+          
         function renderButtons() { 
         $("#new-buttons").empty(); 
 
@@ -70,25 +76,19 @@ $("button").on("click", function() {
         }
       }
         
-        $("#add-superHero").on("click", function(event) {
+
+        $(document).on("click", "#add-superHero", function(){
         event.preventDefault();
         // grab the input from textbox
         var character = $("#superHero-input").val().trim();
 
         // Add info from the textbox to empty array
         topics.push(character); 
-        renderButtons();
-            
+         renderButtons();     
         }); 
-         //$(document).on("click", ".character", ); 
-         //renderButtons();
-
-      //});
-
-        
-      });
-
-
+                
+      
+//wouldnt it be nice if my whole app worked? 
       /*  $('.superGif').on("click", function() { 
           console.log("pickles");
           characterImage = $("<img>");
