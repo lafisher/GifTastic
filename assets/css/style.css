@@ -8,6 +8,18 @@ header {
 	background-color:  #800a0a;
 	padding: 40px 0px 20px 0px; 
 }
+#superHero-form {
+	background-color:  #800a0a;
+	text-align: center;
+
+}
+#add-superHero{
+	padding: 10px 0px 10px 0px; 
+	margin: 10px 0px 10px 0px;
+}
+#superHero-input{
+	background-color: #eca853;
+}
 
 #battle-ground{
 	text-align: center;
@@ -25,3 +37,10 @@ header {
 	margin-left: 75px;
 
 }
+
+.superGif{
+	float: left;
+	text-align: center;
+	background-color: #a29fa0;
+}
+

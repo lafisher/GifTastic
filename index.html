@@ -14,42 +14,49 @@
 </head>
 <body>
 <header> <img src="assets/images/dclogo.png" alt="dclogo" height="100" width="100">
-        </div>Marvel vs DC Ultimate Gif Battle <img src="assets/images/Marvel_Logo.jpg" alt="marvallogo" width="150" height="auto"></header>
+        Marvel vs DC Ultimate Gif Battle <img src="assets/images/Marvel_Logo.jpg" alt="marvallogo" width="150" height="auto"></header>
 <div class = "main-container">
+   <form id="superHero-form">
+      <label for="superHero-input"></label>
+        <input type="text" id="superHero-input"><br>
+
+      <!-- Button triggers new superHero to be added -->
+        <input id="add-superHero" type="submit" class='btn btn-warning btn-lg' value="Add a Super Hero">
+    </form>
+    <div class = "row" id = "new-buttons"> </div>
 	<div class = "row" id = "battle-ground">
-		<button data-character="Green Arrow Justice League" class='btn btn-success btn-lg'>
-		The Green Arrow 
-		</button>
+		  <button data-character="Green Arrow Justice League" class='btn btn-success btn-lg'>
+		  The Green Arrow 
+		  </button>
   		<button data-character="Wonder Woman Justice League" class='btn btn-info btn-lg'>
    		Wonder Woman
- 		 </button>
+ 		  </button>
   		<button data-character="Flash Barry Allen" class='btn btn-danger btn-lg'>
     	The Flash 
   		</button>
   		<button data-character="Superman" class='btn btn-primary btn-lg'>
    		 Superman
   		</button>
- 		 <button data-character="Batman" class='btn btn-warning btn-lg'>
-   		 Batman 
+ 		  <button data-character="Batman" class='btn btn-warning btn-lg'>
+   		Batman 
   		</button>
 
-		<button data-character="Iron Man Avengers" class='btn btn-danger btn-lg'>
-		Iron Man
-		</button>
+		  <button data-character="Iron Man Avengers" class='btn btn-danger btn-lg'>
+		  Iron Man
+		  </button>
   		<button data-character="Captain America Avengers" class='btn btn-primary btn-lg'>
    		Captain America
- 		 </button>
+ 		  </button>
   		<button data-character="The Black Widow" class='btn btn-warning btn-lg'>
     	Black Widow 
   		</button>
   		<button data-character="Thor Avengers" class='btn btn-info btn-lg'>
-   		 Thor
+   		Thor
   		</button>
- 		 <button data-character="Loki Tom Hiddleson" class='btn btn-success btn-lg'>
-   		 Loki 
+ 		  <button data-character="Loki Tom Hiddleson" class='btn btn-success btn-lg'>
+   		Loki 
   		</button>  
-
-  		<div class = "row" id = "new-buttons"> </div>
+  		
 
 	</div>
 	<div class = "row" id="dc-marvel">
@@ -57,11 +64,6 @@
 	</div>
 
 </div>
-
-
-
-
-
 
 
 <script src="assets/javascript/tastic.js"></script>
